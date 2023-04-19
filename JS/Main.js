@@ -6,15 +6,14 @@ tabItem.forEach((element) => {
 });
 
 function open(event) {
-  const tabTarget = event.currentTarget;
+  const tabTarget = event.target;
   const button = tabTarget.dataset.button;
 
-  tabItem.forEach((item) => item.classList.remove("tabs__btn-item_active"));
+  removeClass(tabItem, "tabs__btn-item_active");
+
   tabTarget.classList.add("tabs__btn-item_active");
 
-  tabContent.forEach((item) =>
-    item.classList.remove("tabs__content-item_active")
-  );
+  removeClass(tabContent, "tabs__content-item_active");
 
   document
     .querySelector(`#${button}`)
@@ -27,3 +26,11 @@ const menu = document.querySelector(".menu__list");
 menuBtn.addEventListener("click", () => {
   menu.classList.toggle("menu__list_active");
 });
+
+function removeClass(listItems, className) {
+  listItems.forEach((item) => {
+    if (item.classList.contains(className)) {
+      item.classList.remove(className);
+    }
+  });
+}
