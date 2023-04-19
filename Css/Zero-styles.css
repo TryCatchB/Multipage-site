@@ -13,6 +13,7 @@ body {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
+  border: none;
 }
 
 ul,
@@ -36,6 +37,7 @@ body {
 .wrapper {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
   min-height: 100%;
 }
 

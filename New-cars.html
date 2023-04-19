@@ -21,6 +21,9 @@
               <img class="logo__img" src="Img/Logo.svg" alt="logo" />
             </a>
             <nav class="menu">
+              <button class="menu-btn" type="menu">
+                <span></span> <span></span> <span></span>
+              </button>
               <ul class="menu__list">
                 <li class="menu__list-item">
                   <a href="#" class="menu__list-link menu__list-link_active"
@@ -50,24 +53,47 @@
             <h2 class="section-title">Choose your car</h2>
             <div class="tabs">
               <div class="tabs__btn">
-                <button class="tabs__btn-item" type="button">
+                <button
+                  class="tabs__btn-item tabs__btn-item_active"
+                  data-button="content-1"
+                  type="button"
+                >
                   Car and Minivan
                 </button>
-                <button class="tabs__btn-item" type="button">Trucks</button>
-                <button class="tabs__btn-item" type="button">
+                <button
+                  class="tabs__btn-item"
+                  data-button="content-2"
+                  type="button"
+                >
+                  Trucks
+                </button>
+                <button
+                  class="tabs__btn-item"
+                  data-button="content-3"
+                  type="button"
+                >
                   Crossovers & SUVs
                 </button>
-                <button class="tabs__btn-item" type="button">
+                <button
+                  class="tabs__btn-item"
+                  data-button="content-4"
+                  type="button"
+                >
                   Electrified
                 </button>
               </div>
               <div class="tabs__content">
-                <div class="tabs__content-item">
+                <div
+                  class="tabs__content-item tabs__content-item_active"
+                  id="content-1"
+                >
                   <div class="card">
                     <img src="Img/Crown.jpg" alt="Crown" class="card__img" />
-                    <h4 class="card__title">Toyota Crown 2023</h4>
-                    <p class="card__text">starting from $ 39900</p>
-                    <p class="card__price">$ 650/mo</p>
+                    <div class="card__content">
+                      <h4 class="card__title">Toyota Crown 2023</h4>
+                      <p class="card__text">starting from $ 39900</p>
+                      <p class="card__price">$ 650/mo</p>
+                    </div>
                     <a href="#" class="card__link">see details</a>
                   </div>
                   <div class="card">
@@ -76,16 +102,20 @@
                       alt="Priuse-prime"
                       class="card__img"
                     />
-                    <h4 class="card__title">Prius Prime 2023</h4>
-                    <p class="card__text">starting from $ 39900</p>
-                    <p class="card__price">$ 450/mo</p>
+                    <div class="card__content">
+                      <h4 class="card__title">Prius Prime 2023</h4>
+                      <p class="card__text">starting from $ 39900</p>
+                      <p class="card__price">$ 450/mo</p>
+                    </div>
                     <a href="#" class="card__link">see details</a>
                   </div>
                   <div class="card">
                     <img src="Img/Prius.jpg" alt="Prius" class="card__img" />
-                    <h4 class="card__title">Toyota Prius 2023</h4>
-                    <p class="card__text">starting from $ 39900</p>
-                    <p class="card__price">$ 400/mo</p>
+                    <div class="card__content">
+                      <h4 class="card__title">Toyota Prius 2023</h4>
+                      <p class="card__text">starting from $ 39900</p>
+                      <p class="card__price">$ 400/mo</p>
+                    </div>
                     <a href="#" class="card__link">see details</a>
                   </div>
                   <div class="card">
@@ -94,16 +124,123 @@
                       alt="Hyundai Kona"
                       class="card__img"
                     />
-                    <h4 class="card__title">Hyundai Kona 2023</h4>
-                    <p class="card__text">starting from $ 39900</p>
-                    <p class="card__price">$510/mo</p>
+                    <div class="card__content">
+                      <h4 class="card__title">Hyundai Kona 2023</h4>
+                      <p class="card__text">starting from $ 39900</p>
+                      <p class="card__price">$510/mo</p>
+                    </div>
+                    <a href="#" class="card__link">see details</a>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="Img/Ford Explorer 2023.jpg"
+                      alt="Ford Explorer 2023"
+                      class="card__img"
+                    />
+                    <div class="card__content">
+                      <h4 class="card__title">Ford Explorer 2023</h4>
+                      <p class="card__text">starting from $ 39900</p>
+                      <p class="card__price">$1,013/mo</p>
+                    </div>
+                    <a href="#" class="card__link">see details</a>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="Img/Santa  Fe 2023.jpg"
+                      alt="Santa  Fe 2023"
+                      class="card__img"
+                    />
+                    <div class="card__content">
+                      <h4 class="card__title">Santa Fe 2023</h4>
+                      <p class="card__text">starting from $ 39900</p>
+                      <p class="card__price">$739/mo</p>
+                    </div>
+                    <a href="#" class="card__link">see details</a>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="Img/KIA Niro 2023.jpg"
+                      alt="KIA Niro 2023"
+                      class="card__img"
+                    />
+                    <div class="card__content">
+                      <h4 class="card__title">KIA Niro 2023</h4>
+                      <p class="card__text">starting from $ 33600</p>
+                      <p class="card__price">$554/mo</p>
+                    </div>
+                    <a href="#" class="card__link">see details</a>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="Img/Chevrolet Silverado.jpg"
+                      alt="Chevrolet Silverado"
+                      class="card__img"
+                    />
+                    <div class="card__content">
+                      <h4 class="card__title">Chevrolet Silverado</h4>
+                      <p class="card__text">starting from $ 62260</p>
+                      <p class="card__price">$1,032/mo</p>
+                    </div>
+                    <a href="#" class="card__link">see details</a>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="Img/Honda CR-V 2023.jpg"
+                      alt="Honda CR-V 2023"
+                      class="card__img"
+                    />
+                    <div class="card__content">
+                      <h4 class="card__title">Honda CR-V 2023</h4>
+                      <p class="card__text">starting from $ 35650</p>
+                      <p class="card__price">$591/mo</p>
+                    </div>
+                    <a href="#" class="card__link">see details</a>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="Img/Hyundai Tucson.jpg"
+                      alt="Hyundai Tucson"
+                      class="card__img"
+                    />
+                    <div class="card__content">
+                      <h4 class="card__title">Hyundai Tucson</h4>
+                      <p class="card__text">starting from $ 31885</p>
+                      <p class="card__price">$528/mo</p>
+                    </div>
+                    <a href="#" class="card__link">see details</a>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="Img/Chevrolet Equinox .jpg"
+                      alt="Chevrolet Equinox"
+                      class="card__img"
+                    />
+                    <div class="card__content">
+                      <h4 class="card__title">Chevrolet Equinox</h4>
+                      <p class="card__text">starting from $ 28430</p>
+                      <p class="card__price">$471/mo</p>
+                    </div>
+                    <a href="#" class="card__link">see details</a>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="Img/Jeep Wrangler 2023.jpg"
+                      alt="Jeep Wrangler 2023"
+                      class="card__img"
+                    />
+                    <div class="card__content">
+                      <h4 class="card__title">Jeep Wrangler 2023</h4>
+                      <p class="card__text">starting from $ 60000</p>
+                      <p class="card__price">$997/mo</p>
+                    </div>
                     <a href="#" class="card__link">see details</a>
                   </div>
                 </div>
-                <div class="tabs__content-item"></div>
-                <div class="tabs__content-item"></div>
-                <div class="tabs__content-item"></div>
+                <div class="tabs__content-item" id="content-2"></div>
+                <div class="tabs__content-item" id="content-3"></div>
+                <div class="tabs__content-item" id="content-4"></div>
               </div>
+              <a href="#" class="showmore-link">SHOW MORE</a>
             </div>
           </div>
         </section>
@@ -135,7 +272,7 @@
       </main>
       <footer class="footer">
         <div class="container">
-          <nav class="footer__menu">
+          <nav class="footer__menu text-aling">
             <ul class="footer__menu-list">
               <li class="footer__menu-item">
                 <p class="footer__menu-title">Products</p>
@@ -190,7 +327,7 @@
               </li>
             </ul>
           </nav>
-          <ul class="app">
+          <ul class="footer__app app">
             <li class="app__item">
               <a href="#" class="app__item-link">
                 <img src="Img/App-Store.svg" alt="App Store" />
@@ -234,5 +371,6 @@
         </div>
       </footer>
     </div>
+    <script src="JS/Main.js"></script>
   </body>
 </html>
