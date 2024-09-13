@@ -26,10 +26,10 @@
 .menu__list-link {
   color: #ffffff;
   text-transform: uppercase;
-}
 
-.menu__list-link:hover {
-  text-decoration: underline;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .menu__list-link_active {
